@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pdf to Doc</title>
+</head>
+<style>
+     .j1{
+    border-radius: 3px;
+    border-color: red;
+    border-style: solid;
+    width: 350px;
+    margin-left: 35%;
+    margin-top: 1%;
+    padding-bottom: 20px;
+    padding-left: 1%;
+   }
+   h1{
+    text-align: center;
+   }
+   p{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0%;
+   }
+   body{
+    background-color: rgb(242, 193, 247);
+   }
+</style>
+<body>
+    <p>I <span style="font-size:200%;color:red;">&#10084;</span> WORD!</p>
+    <div class="j1">
+        <h1>
+          Upload Pdf
+        </h1>
+        <form action="/index" method="POST" enctype="multipart/form-data">
+            <input type="file" name="filename">
+            <input type="submit" value="Upload">
+
+        </form>
+
+    </div>
+</body>
+</html>

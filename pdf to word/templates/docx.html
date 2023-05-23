@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Docx</title>
+</head>
+<style>
+  .box{
+    border: 3px solid;
+    border-color: red;
+    width: 300px;
+  }
+  h1{
+    text-align: center;
+  }
+  .btn{
+    justify-content: center;
+    margin-left: 38%;
+  }
+  .box{
+    margin-left: 38%;
+    margin-top: 10%;
+    padding-bottom: 20px;
+  }
+  .hom{
+    margin-left: 48%;
+    margin-top: 40px;
+  }
+  body{
+    background-color: rgb(192, 234, 234);
+  }
+</style>
+<body>
+<div class="box">
+    <h1>Download Word</h1>
+    <form action="/docx" method="POST">
+        <input value={{variable}} id="3" name="filename" type="hidden">
+        <button class="btn"><i class="fa fa-download"></i>Download</button>
+    </form>
+    
+  </div>
+  <form action="/home" method="POST" class="hom">
+      <button>HOME</button>
+  </form>
+  
+
+</body>
+</html>
